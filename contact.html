@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.jpg " alt="Round image" class="roundimage">
+            <ul class="options">
+                <li><b><a href="index.html">Home</a></b></li>
+                <li><b><a href="about.html">About</a></b></li>
+                <li><b><a href="courses.html">Courses</a></b></li>
+                <li><b><a href="contact.html">Contact Us</a></b></li>
+                <li><b><a href="login.html">Login</a></b></li>
+                <li><b><a href="signup.html">Sign Up</a></b></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contactmain">
+        <div class="borderdark">
+            <form id="Form">
+            <span class="heading"><b>Contact Us</b></span><br><br>
+            <input type="text" id="first" placeholder="First Name" required><br>
+            <input type="text" id="last" placeholder="Last Name" required><br>
+            <input type="text" id="father" placeholder="Father Name" required><br>
+            <input type="text" id="phone" placeholder="Phone No" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <textarea id="msg" placeholder="Write your Message"></textarea><br>
+            <button type="submit" class="sent">Sent Message</button>
+            </form>
+            <div class="message" id="Message">Message Sent successfully!</div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <footer class="footerbar">
+        <div class="contactinfo">
+            <h2>Contact Info</h2><br>
+            <img class="image" src="phoneicon.jpg"> +012 456 45678<br><br>
+            <img class="image" src="mailicon.jpg"> elearning@example.com<br><br>
+            <img class="icons" src="twittericon.jpg"><img class="icons" src="fbicon.png"><img class="icons" src="youtubeicon.jpg"><img class="icons" src="linkedlnIcon.jpg"></span>
+        </div>
+        <div class="quickLink">
+            <h2>Quick Link</h2><br>
+            <li><b><a href="index.html">Home</a></b></li>
+                    <li><b><a href="about.html">About</a></b></li>
+                    <li><b><a href="courses.html">Courses</a></b></li>
+                    <li><b><a href="contact.html">Contact Us</a></b></li>
+                    <li><b><a href="login.html">Login</a></b></li>
+                    <li><b><a href="signup.html">Sign Up</a></b></li>
+        </div>
+    </footer>
+    <script>
+        const checkfornull=()=>{
+                var f = document.getElementById("first").value.trim();
+                 var l = document.getElementById("last").value.trim();
+                 var fa = document.getElementById("father").value.trim();
+                 var p = document.getElementById("phone").value.trim();
+                 var c = document.getElementById("email").value.trim();
+                var m = document.getElementById("msg").value.trim();
+                if (f === '' || l === '' || fa === '' || p === '' || c === '' || m === '') {
+                     alert("Please fill in all fields.");
+                 }
+                 else{
+                    window.location.href = "mailto:salwaaliakbar22@gmail.com";                
+                 }
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.jpg " alt="Round image" class="roundimage">
+            <ul class="options">
+                <li><b><a href="index.html">Home</a></b></li>
+                <li><b><a href="about.html">About</a></b></li>
+                <li><b><a href="courses.html">Courses</a></b></li>
+                <li><b><a href="contact.html">Contact Us</a></b></li>
+                <li><b><a href="login.html">Login</a></b></li>
+                <li><b><a href="signup.html">Sign Up</a></b></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="maindiv">
+            <div>
+                <img src="AIcourse.jpg" class="course" id="AI"><br>
+            </div>
+            <div id="aipopup" class="popup">
+                <div class="popup-content">
+                    <img src="AIcourse.jpg" id="popupImg">
+                    <div class="details">
+                        <div class="close" id="closeAI">X</div>
+                        <div class="text">
+                            <h2>Course Name: Artificial Intelligence</h2><br>
+                            <p>Duration: 4 years</p><br>
+                            <p>Fee: $30000 per semester</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <img src="appCourse.png" class="course" id="App"><br>
+            </div>
+            <div id="apppopup" class="popup">
+                <div class="popup-content">
+                    <img src="appCourse.png" id="popupImg">
+                    <div class="details">
+                        <div class="close" id="closeApp">X</div>
+                        <div class="text">
+                            <h2>Course Name: App Development</h2><br>
+                            <p>Duration: 4 years</p><br>
+                            <p>Fee: $250000 per semester</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <img src="graphicdesinging.png" class="course" id="Graphic"><br>
+            </div>
+            <div id="graphicpopup" class="popup">
+                <div class="popup-content">
+                    <img src="graphicdesinging.png" id="popupImg">
+                    <div class="details">
+                        <div class="close" id="closeGraphic">X</div>
+                        <div class="text">
+                            <h2>Course Name: Graphic Designing</h2><br>
+                            <p>Duration: 4 years</p><br>
+                            <p>Fee: $280000 per semester</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <img src="webCourse.jpg" class="course" id="Web"><br>
+            </div>
+            <div id="webpopup" class="popup">
+                <div class="popup-content">
+                    <img src="webCourse.jpg" id="popupImg">
+                    <div class="details">
+                        <div class="close" id="closeWeb">X</div>
+                        <div class="text">
+                            <h2>Course Name: Web Development</h2><br>
+                            <p>Duration: 4 years</p><br>
+                            <p>Fee: $280000 per semester</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <img src="cyberCourse.jpg" class="course" id="Cyber"><br>
+            </div>
+            <div id="cyberpopup" class="popup">
+                <div class="popup-content">
+                    <img src="cyberCourse.jpg" id="popupImg">
+                    <div class="details">
+                        <div class="close" id="closeCyber">X</div>
+                        <div class="text">
+                            <h2>Course Name: Cyber Security</h2><br>
+                            <p>Duration: 4 years</p><br>
+                            <p>Fee: $250000 per semester</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <img src="cloudCourse.jpg" class="course" id="Cloud"><br>
+            </div>
+            <div id="cloudpopup" class="popup">
+                <div class="popup-content">
+                    <img src="cloudCourse.jpg" id="popupImg">
+                    <div class="details">
+                        <div class="close" id="closeCloud">X</div>
+                        <div class="text">
+                            <h2>Course Name: Cloud Computing</h2><br>
+                            <p>Duration: 4 years</p><br>
+                            <p>Fee: $250000 per semester</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // Function to handle opening the popup
+        function openPopup(popupId) {
+            document.getElementById(popupId).style.display = "flex";
+        }
+    
+        // Function to handle closing the popup
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = "none";
+        }
+    
+        // Adding event listeners for images and close buttons
+        document.getElementById("AI").onclick = function() { openPopup('aipopup'); }
+        document.getElementById("closeAI").onclick = function() { closePopup('aipopup'); }
+    
+        document.getElementById("App").onclick = function() { openPopup('apppopup'); }
+        document.getElementById("closeApp").onclick = function() { closePopup('apppopup'); }
+    
+        document.getElementById("Graphic").onclick = function() { openPopup('graphicpopup'); }
+        document.getElementById("closeGraphic").onclick = function() { closePopup('graphicpopup'); }
+    
+        document.getElementById("Web").onclick = function() { openPopup('webpopup'); }
+        document.getElementById("closeWeb").onclick = function() { closePopup('webpopup'); }
+    
+        document.getElementById("Cyber").onclick = function() { openPopup('cyberpopup'); }
+        document.getElementById("closeCyber").onclick = function() { closePopup('cyberpopup'); }
+    
+        document.getElementById("Cloud").onclick = function() { openPopup('cloudpopup'); }
+        document.getElementById("closeCloud").onclick = function() { closePopup('cloudpopup'); }
+    </script>
+    <footer class="footerbar">
+        <div class="contactinfo">
+            <h2>Contact Info</h2><br>
+            <img class="image" src="phoneicon.jpg"> +012 456 45678<br><br>
+            <img class="image" src="mailicon.jpg"> elearning@example.com<br><br>
+            <img class="icons" src="twittericon.jpg"><img class="icons" src="fbicon.png"><img class="icons" src="youtubeicon.jpg"><img class="icons" src="linkedlnIcon.jpg"></span>
+        </div>
+        <div class="quickLink">
+            <h2>Quick Link</h2><br>
+            <li><b><a href="index.html">Home</a></b></li>
+                    <li><b><a href="about.html">About</a></b></li>
+                    <li><b><a href="courses.html">Courses</a></b></li>
+                    <li><b><a href="contact.html">Contact Us</a></b></li>
+                    <li><b><a href="login.html">Login</a></b></li>
+                    <li><b><a href="signup.html">Sign Up</a></b></li>
+        </div>
+    </footer>
+</body>
+</html>
